@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/html" href="Gerenciamento.html">
+    <link rel="stylesheet" type="text/html" href="Funcionario.html">
+    <link rel="stylesheet" type="text/html" href="login.html">
+    <title>ParkHere</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">ParkHere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Area do Usuario
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Funcionario.html">Funcionario</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Gerenciamento.html">Gerenciamento</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Login/Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <form>
+        <div class="mb-4">
+          <label for="exampleInputEmail1" class="form-label">Nome do Cliente</label>
+          <input type="email" class="form-control" id="clienteNome" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-4">
+            <label for="exampleInputEmail1" class="form-label">CPF do Cliente</label>
+            <input type="email" class="form-control" id="clienteNome" aria-describedby="emailHelp">
+        </div>
+        <label for="exampleInputEmail1" class="form-label">Tipo do Veiculo</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Veiculo</option>
+            <option value="1">Carro</option>
+            <option value="2">Moto</option>
+            <option value="3">Van</option>
+            <option value="3">Caminhonete</option>
+            <option value="3">Caminhão</option>
+        </select>
+        <br>
+        <div class="mb-4">
+            <label for="exampleInputEmail1" class="form-label">Modelo do Veiculo</label>
+            <input type="email" class="form-control" id="ModeloCarro" aria-describedby="emailHelp">
+          </div>
+        <div class="mb-4">
+            <label for="exampleInputEmail1" class="form-label">Placa do Veiculo</label>
+            <input type="email" class="form-control" id="PlacaVeiculo" aria-describedby="emailHelp">
+        </div>
+        <label for="exampleInputEmail1" class="form-label">Entrada / Saida</label>
+        <div class="row">
+            <div class="col">
+              <input type="datetime" class="form-control" placeholder="Data/Hora Entrada" aria-label="Data/Hora Entrada">
+            </div>
+            <div class="col">
+              <input type="datetime" class="form-control" placeholder="Data/Hora Saida" aria-label="Data/Hora Saida">
+            </div>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">A Pagar</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">R$</span>
+              <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="mb-4 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Todos os dados foram preenchidos</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Gerar Nota Fiscal</button>
+      </form>
+</body>
+</html>
