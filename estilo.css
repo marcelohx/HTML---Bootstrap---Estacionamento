@@ -1,3 +1,45 @@
 .mb-3{
     text-align: center;
 }
+
+h2{
+    text-align: center;
+    border: 5px solid #fff;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgb(214, 135, 62);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-fluid{
+    background-color: rgb(214, 135, 62);
+}
+
+body{
+    background-color: rgb(240, 194, 125);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2%;
+}
+
+.btn-outline-success{
+    background-color: rgb(214, 135, 62);
+    color: black;
+    border-color:rgb(214, 135, 62);
+}
+.btn-outline-success:hover{
+    background-color: #fff;
+    color: black;
+    border-color:#fff;
+}
+
+.btn-primary{
+    background-color: rgb(214, 135, 62);
+    color: black;
+    border-color:rgb(214, 135, 62)
+}
+
+.btn-primary:hover{
+    background-color: #fff;
+    color: black;
+    border-color:#fff;
+}

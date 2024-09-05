@@ -15,6 +15,10 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-p-square-fill" viewBox="0 0 16 16">
+            <path d="M8.27 8.074c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97z"/>
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.5 4.002h2.962C10.045 4.002 11 5.104 11 6.586c0 1.494-.967 2.578-2.55 2.578H6.784V12H5.5z"/>
+          </svg>
           <a class="navbar-brand" href="index.html">ParkHere</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,17 +34,18 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="Gerenciamento.html">Gerenciamento</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Login/Logout</a></li>
+                  <li><a class="dropdown-item" href="login.html">Login/Logout</a></li>
                 </ul>
               </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
             </form>
           </div>
         </div>
     </nav>
+    <br>
     <form>
         <div class="mb-4">
           <label for="exampleInputEmail1" class="form-label">Nome do Cliente</label>
@@ -48,7 +53,7 @@
         </div>
         <div class="mb-4">
             <label for="exampleInputEmail1" class="form-label">CPF do Cliente</label>
-            <input type="email" class="form-control" id="clienteNome" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="clienteNome" aria-describedby="emailHelp">
         </div>
         <label for="exampleInputEmail1" class="form-label">Tipo do Veiculo</label>
         <select class="form-select" aria-label="Default select example">
@@ -62,19 +67,25 @@
         <br>
         <div class="mb-4">
             <label for="exampleInputEmail1" class="form-label">Modelo do Veiculo</label>
-            <input type="email" class="form-control" id="ModeloCarro" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="ModeloCarro" aria-describedby="emailHelp">
           </div>
         <div class="mb-4">
             <label for="exampleInputEmail1" class="form-label">Placa do Veiculo</label>
-            <input type="email" class="form-control" id="PlacaVeiculo" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="PlacaVeiculo" aria-describedby="emailHelp">
         </div>
-        <label for="exampleInputEmail1" class="form-label">Entrada / Saida</label>
+        <label for="entrada/saida" class="form-label">Entrada / Saida</label>
         <div class="row">
             <div class="col">
-              <input type="datetime" class="form-control" placeholder="Data/Hora Entrada" aria-label="Data/Hora Entrada">
+              <input type="date" class="form-control" placeholder="Data Entrada" aria-label="Data Entrada">
             </div>
             <div class="col">
-              <input type="datetime" class="form-control" placeholder="Data/Hora Saida" aria-label="Data/Hora Saida">
+              <input type="time" class="form-control" placeholder="Hora da Entrada" aria-label="Hora da Entrada">
+            </div>
+            <div class="col">
+              <input type="date" class="form-control" placeholder="Data Saida" aria-label="Data Saida">
+            </div>
+            <div class="col">
+              <input type="time" class="form-control" placeholder="Hora Saida" aria-label="Hora Saida">
             </div>
         </div>
         <br>
@@ -91,7 +102,7 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Todos os dados foram preenchidos</label>
         </div>
-        <button type="submit" class="btn btn-primary">Gerar Nota Fiscal</button>
+        <button type="submit" class="btn btn-primary">Ir para pagamento</button>
       </form>
 </body>
 </html>
